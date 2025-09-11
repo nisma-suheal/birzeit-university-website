@@ -1,0 +1,30 @@
+body {
+  font-family: 'Nunito', sans-serif;
+}
+.container {
+  width: 90%;
+}
+button.active {
+  color: #357baf;
+}
+.active-link {
+  color: #357BAF !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #357baf !important;
+  width: 12px;
+  height: 12px;
+}
+
+@media(1024px <= width <= 1280px){
+  /* header */
+  header .container div {
+    gap: 20px;
+  }
+  .menu {
+    gap: 20px;
+  }
+  .menu a {
+    font-size: 18px;
+  }
+}
