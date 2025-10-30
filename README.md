@@ -1,1 +1,0 @@
-# birzeit-university-website

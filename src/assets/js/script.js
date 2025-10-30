@@ -154,7 +154,7 @@ declineButtons.forEach((btn) => {
     });
   });
 
-
+  // Verify passwords (are they all filled in and does the new one match the confirmation)
   const newPwd = document.getElementById("newPassword");
   const confirmPwd = document.getElementById("confirmPassword");
   const currentPwd = document.getElementById("currentPassword")
