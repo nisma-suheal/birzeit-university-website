@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Project</title>
+  <link rel="stylesheet" href="../output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-[#fbfcfd]">
+  <!-- header -->
+  <header class="bg-[#f5f5f5] fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center py-4">
+      <div class="flex justify-start items-center gap-8">
+        <div class="logo">
+          <a href="index.html">
+            <img src="../assets/images/logo (1).png" alt="Buro Logo">
+          </a>
+        </div>
+        <div id="menu"
+          class="menu text-xl gap-8 hidden lg:flex absolute top-full right-0 mt-2 lg:mt-0 bg-white shadow-md rounded border border-gray-200 lg:static lg:shadow-none lg:border-0 lg:bg-transparent transition duration-500 ease-linear">
+          <a href="../index.html"
+            class="block py-3 px-5 lg:py-0 lg:px-0 border-b border-gray-200 lg:border-none hover:text-[#357BAF] transition-colors duration-300">Home</a>
+          <a href="../Landing Page/Active-project.html"
+            class="block py-3 px-5 lg:py-0 lg:px-0 border-b border-gray-200 lg:border-none hover:text-[#357BAF] transition-colors duration-300">Active
+            Projects</a>
+          <a href="../Landing Page/ProjectsSeekingPartners.html"
+            class="block py-3 px-5 lg:py-0 lg:px-0 border-b border-gray-200 lg:border-none hover:text-[#357BAF] transition-colors duration-300">Projects
+            Seeking Partners</a>
+          <a id="myProjectLink" href="my_project.html"
+            class="block py-3 px-5 lg:py-0 lg:px-0 border-b border-gray-200 lg:border-none hover:text-[#357BAF] transition-colors duration-300">My
+            Projects</a>
+          <a id="profileLink" href="Profile.html"
+            class="block py-3 px-5 lg:py-0 lg:px-0  border-b border-gray-200 lg:border-none hover:text-[#357BAF] transition-colors duration-300">Profile</a>
+
+          <div class="relative hidden lg:block">
+            <svg xmlns="http://www.w3.org/2000/svg" class="NoificationIcon lucide-bell-icon w-6 h-6  cursor-pointer"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+              <path
+                d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+            </svg>
+
+            <div id="notificationBox"
+              class="hidden absolute top-8 right-0 w-[745px] bg-white shadow-lg rounded-lg border border-gray-200 p-4 lg:p-8 z-50">
+              <h3 class="text-3xl font-semibold mb-8 text-[#357BAF]">Notifications</h3>
+
+              <div class="group px-2 py-4 shadow-sm rounded mb-3 transition duration-300 hover:bg-[#e8f1f5]">
+                <div class="flex items-center gap-4">
+                  <img src="../assets/images/logoNotfication.png" alt="Notification Icon">
+                  <div>
+                    <p>"Absorbing Prime Project" Cooperation Request: by Ahmed Mohammad (Accept/Decline)</p>
+                    <p class="text-[#505050] mt-2">23 April - 2023</p>
+                  </div>
+                </div>
+                <div class="mt-2 hidden group-hover:flex gap-5">
+                  <button class="AcceptBtn bg-[#00c16f] text-white text-base px-8 py-2 rounded">Accept</button>
+                  <button class="DeclineBtn bg-[#fc4b4b] text-white text-base px-8 py-2 rounded">Decline</button>
+                </div>
+              </div>
+
+              <div class="group px-2 py-4 shadow-sm rounded mb-3 transition duration-300 hover:bg-[#e8f1f5]">
+                <div class="flex items-center gap-4">
+                  <img src="../assets/images/logoNotfication.png" alt="Notification Icon">
+                  <div>
+                    <p>Teacher Mohamed Ahmed sent you a notification to approve his selection of student Mohamed Mahmoud
+                      for the project "Absorbing Prime Project"</p>
+                    <p class="text-[#505050] mt-2">23 April - 2023</p>
+                  </div>
+                </div>
+                <div class="mt-2 hidden group-hover:flex gap-5">
+                  <button class="AcceptBtn bg-[#00c16f] text-white text-base px-8 py-2 rounded">Accept</button>
+                  <button class="DeclineBtn bg-[#fc4b4b] text-white text-base px-8 py-2 rounded">Decline</button>
+                </div>
+              </div>
+
+              <div class="group px-2 py-4 shadow-sm rounded mb-3 transition duration-300 hover:bg-[#e8f1f5]">
+                <div class="flex items-center gap-4">
+                  <img src="../assets/images/logoNotfication.png" alt="Notification Icon">
+                  <div>
+                    <p>"Absorbing Prime Project" Cooperation Request: by Ahmed Mohammad (Accept/Decline)</p>
+                    <p class="text-[#505050] mt-2">23 April - 2023</p>
+                  </div>
+                </div>
+                <div class="mt-2 hidden group-hover:flex gap-5">
+                  <button class="AcceptBtn bg-[#00c16f] text-white text-base px-8 py-2 rounded">Accept</button>
+                  <button class="DeclineBtn bg-[#fc4b4b] text-white text-base px-8 py-2 rounded">Decline</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <a onclick="Logout()" href="" class="lg:hidden bg-[#fc4b4b] text-white py-2 px-5 block text-center">Sign
+            out</a>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="relative block lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="NoificationIcon lucide-bell-icon w-6 h-6  cursor-pointer"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+            <path
+              d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+          </svg>
+
+          <div id="notificationBox"
+            class="hidden fixed left-1/2 transform -translate-x-1/2 w-[85%] md:w-[600px] lg:w-[745px] bg-white shadow-lg rounded-lg border border-gray-200 p-4 md:p-8 z-50 mt-10">
+            <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-8 text-[#357BAF]">Notifications</h3>
+
+            <div
+              class="group px-1 py-2 lg:px-2 lg:py-4 shadow-sm rounded mb-3 transition duration-300 hover:bg-[#e8f1f5]">
+              <div class="flex items-center gap-4">
+                <img src="../assets/images/logoNotfication.png" alt="Notification Icon">
+                <div>
+                  <p>"Absorbing Prime Project" Cooperation Request: by Ahmed Mohammad (Accept/Decline)</p>
+                  <p class="text-[#505050] mt-2">23 April - 2023</p>
+                </div>
+              </div>
+              <div class="mt-2 hidden group-hover:flex gap-3 md:gap-5">
+                <button
+                  class="AcceptBtn bg-[#00c16f] text-white text-base px-4 py-1 lg:px-8 lg:py-2 rounded">Accept</button>
+                <button
+                  class="DeclineBtn bg-[#fc4b4b] text-white text-base px-4 py-1 lg:px-8 lg:py-2 rounded">Decline</button>
+              </div>
+            </div>
+
+            <div
+              class="group px-1 py-2 lg:px-2 lg:py-4 shadow-sm rounded mb-3 transition duration-300 hover:bg-[#e8f1f5]">
+              <div class="flex items-center gap-4">
+                <img src="../assets/images/logoNotfication.png" alt="Notification Icon">
+                <div>
+                  <p>Teacher Mohamed Ahmed sent you a notification to approve his selection of student Mohamed Mahmoud
+                    for the project "Absorbing Prime Project"</p>
+                  <p class="text-[#505050] mt-2">23 April - 2023</p>
+                </div>
+              </div>
+              <div class="mt-2 hidden group-hover:flex gap-3 md:gap-5">
+                <button
+                  class="AcceptBtn bg-[#00c16f] text-white text-base px-4 py-1 lg:px-8 lg:py-2 rounded">Accept</button>
+                <button
+                  class="DeclineBtn bg-[#fc4b4b] text-white text-base px-4 py-1 lg:px-8 lg:py-2 rounded">Decline</button>
+              </div>
+            </div>
+
+            <div
+              class="group px-1 py-2 lg:px-2 lg:py-4 shadow-sm rounded mb-3 transition duration-300 hover:bg-[#e8f1f5]">
+              <div class="flex items-center gap-4">
+                <img src="../assets/images/logoNotfication.png" alt="Notification Icon">
+                <div>
+                  <p>"Absorbing Prime Project" Cooperation Request: by Ahmed Mohammad (Accept/Decline)</p>
+                  <p class="text-[#505050] mt-2">23 April - 2023</p>
+                </div>
+              </div>
+              <div class="mt-2 hidden group-hover:flex gap-3 md:gap-5">
+                <button
+                  class="AcceptBtn bg-[#00c16f] text-white text-base px-4 py-1 lg:px-8 lg:py-2 rounded">Accept</button>
+                <button
+                  class="DeclineBtn bg-[#fc4b4b] text-white text-base px-4 py-1 lg:px-8 lg:py-2 rounded">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="menuBtn" class="block lg:hidden bg-[#357BAF] text-white py-2 px-3 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-align-justify-icon lucide-align-justify">
+            <path d="M3 12h18" />
+            <path d="M3 18h18" />
+            <path d="M3 6h18" />
+          </svg>
+        </button>
+
+        <div>
+          <button onclick="Logout()" href=""
+            class="hidden lg:inline-block text-base bg-[#fc4b4b] text-white md:py-1 md:px-6 lg:py-2 lg:px-8 rounded">Sign
+            out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container mx-auto mt-40">
+      <div class="flex flex-col md:flex-row justify-start md:justify-between items-center gap-3  mb-8">
+        <h1 class="text-3xl text-[#357baf] font-semibold">Add project</h1>
+        <a href="Selecting a project for an external Supervisor.html"
+          class="text-[#357baf] px-8 py-3 rounded bg-white border border-[#357baf]">Select a project proposed by an
+          external supervisor</a>
+      </div>
+      <form action="">
+        <div>
+          <label for="">Project Title</label>
+          <input type="text" placeholder="Enter  project title"
+            class="w-full text-[#c1c1c1] block shadow-md py-2 px-3 rounded mt-2 outline-0 focus:border border-[#357baf]">
+        </div>
+        <div class="mt-5 flex gap-5">
+          <div class="w-1/2">
+            <label for="">Start Date</label>
+            <input type="date" placeholder="Select"
+              class="w-full text-[#c1c1c1] block shadow-md py-2 px-3 rounded mt-2 outline-0 focus:border border-[#357baf]">
+          </div>
+          <div class="w-1/2">
+            <label for="">End Date</label>
+            <input type="date" placeholder="Select"
+              class="w-full text-[#c1c1c1] block shadow-md py-2 px-3 rounded mt-2 outline-0 focus:border border-[#357baf]">
+          </div>
+        </div>
+        <div class="mt-5">
+          <label for="">Estimated Working Hours Per Week</label>
+          <input type="" placeholder="6 hour"
+            class="w-full block shadow-md py-2 px-3 rounded mt-2 outline-0 focus:border border-[#357baf]">
+        </div>
+        <div class="mt-5">
+          <label for="">Project Description</label>
+          <textarea name="" id="" rows="5" placeholder="Enter a brief description about your research project"
+            class="w-full block shadow-md py-2 px-3 rounded mt-2 outline-0 focus:border border-[#357baf]"></textarea>
+        </div>
+        <div class="text-center mt-8">
+          <a href="select-student.html" class="text-white bg-[#357baf] rounded py-3 px-8 ">Next</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="mt-12 md:mt-16 lg:mt-20 p-8 bg-[#051632] w-full">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+      <div>
+        <a href="">
+          <img src="../assets/images/footer.png" alt="">
+        </a>
+        <p class="text-base w-[60%] mt-5 text-white">The Palestinian Undergraduate Research Opportunity Program is a new
+          venture designed to foster</p>
+      </div>
+
+      <div class="text-white flex flex-col">
+        <h2 class="text-xl font-medium mb-5">Quick Links</h2>
+        <a href="" class="block mb-5 hover:text-[#357BAF] transition-colors duration-300">Active Projects</a>
+        <a href="" class="block mb-5 hover:text-[#357BAF] transition-colors duration-300">Projects Seeking Partners</a>
+        <a href="" class="block hover:text-[#357BAF] transition-colors duration-300">Contact Us</a>
+      </div>
+
+      <div class="text-white flex flex-col">
+        <h2 class="text-xl font-medium mb-5">Contact Information</h2>
+
+        <div class="flex items-center gap-2 mb-5">
+          <img src="../assets/images/Message.png" alt="">
+          <a href="" class="hover:text-[#357BAF] transition-colors duration-300">purop@birzeit.edu</a>
+        </div>
+
+        <div class="flex items-center gap-2 mb-5">
+          <img src="../assets/images/Call.png" alt="">
+          <a href="" class="hover:text-[#357BAF] transition-colors duration-300">+97022982040</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="../assets/images/Call.png" alt="">
+          <a href="" class="hover:text-[#357BAF] transition-colors duration-300">+97022982002</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
